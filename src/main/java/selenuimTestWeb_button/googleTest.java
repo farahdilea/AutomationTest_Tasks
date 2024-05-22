@@ -6,22 +6,35 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class googleTest {
- 
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-WebDriver driver = new ChromeDriver();
-driver.get("https://www.google.com");
-driver.manage().window().maximize();
-Thread.sleep(1000);
-driver.findElement(By.name("q")).sendKeys("Selenium Tutorials");
-Thread.sleep(1000);
+    public	WebDriver driver;
+	public String webURL="https://www.google.com";
 
-WebElement searchButton = driver.findElement(By.name("btnK"));
-searchButton.click();
-Thread.sleep(1000);
-driver.close();	
-}	
+	
+	@BeforeTest
+	public void setURL() {
+	driver = new ChromeDriver();
+	driver.get(webURL);
+	driver.manage().window().maximize();
+	}
+		
+
+    @Test
+    public void verifySearchButton() {
+	String expectedString="Selenium Tutorials";
+    driver.findElement(By.name("q")).sendKeys("Selenium Tutorials",Keys.ENTER);
+
+    }
+    
+    @AfterTest
+    public void endSession() {
+    driver.quit();		
+    }
+  
+
 }
