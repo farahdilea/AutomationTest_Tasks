@@ -15,9 +15,9 @@ public static void main(String[] args) {
 WebDriver driver = new ChromeDriver();
 driver.get("https://www.google.com");
 driver.manage().window().maximize();
-driver.findElement(By.name("q")).sendKeys("Selenium Tutorials");
-WebElement searchButton = driver.findElement(By.name("btnK"));
-searchButton.click();
-driver.close();	
+driver.findElement(By.name("q")).sendKeys("Selenium Tutorials",Keys.ENTER);
+String title=  driver.getTitle();
+ Assert.assertTrue(title.contains("Selenium Tutorials "));
+  driver.close();	
 }	
 }
