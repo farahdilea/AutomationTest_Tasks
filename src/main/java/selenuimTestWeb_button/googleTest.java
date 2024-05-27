@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -26,10 +27,10 @@ public class googleTest {
 
     @Test
     public void verifySearchButton() {
-	String expectedString="Selenium Tutorials";
     driver.findElement(By.name("q")).sendKeys("Selenium Tutorials",Keys.ENTER);
-
-    }
+    String title=  driver.getTitle();
+    Assert.assertTrue(title.contains("Selenium Tutorials "));
+     }
     
     @AfterTest
     public void endSession() {
