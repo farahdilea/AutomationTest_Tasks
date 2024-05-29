@@ -10,6 +10,13 @@
           <include name="verifySearchButton"/>
         </methods>
       </class> <!-- selenuimTestWeb_button.googleTest -->
+      <class name="selenuimTestWeb_button.testLogin">
+        <methods>
+          <include name="endSession"/>
+          <include name="verifyLogin"/>
+          <include name="setURL"/>
+        </methods>
+      </class> <!-- selenuimTestWeb_button.testLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
