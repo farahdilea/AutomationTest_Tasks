@@ -15,8 +15,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class googleTest {
     public	WebDriver driver;
 	public String webURL="https://www.google.com";
-
-	
 	@BeforeTest
 	public void setURL() {
 	driver = new ChromeDriver();
