@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class googleTest {
+
     public	WebDriver driver;
 	public String webURL="https://www.google.com";
 	@BeforeTest
@@ -35,5 +36,17 @@ public class googleTest {
     driver.quit();		
     }
   
+
+ 
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+WebDriver driver = new ChromeDriver();
+driver.get("https://www.google.com");
+driver.manage().window().maximize();
+driver.findElement(By.name("q")).sendKeys("Selenium Tutorials",Keys.ENTER);
+String title=  driver.getTitle();
+ Assert.assertTrue(title.contains("Selenium Tutorials "));
+  driver.close();	
+}	
 
 }
