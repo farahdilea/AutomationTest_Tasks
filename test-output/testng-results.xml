@@ -1,25 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-29T11:03:59 EEST" name="Default suite" finished-at="2024-05-29T11:04:10 EEST" duration-ms="11448">
+  <suite started-at="2024-06-06T11:36:42 EEST" name="Suite" finished-at="2024-06-06T11:36:58 EEST" duration-ms="16506">
     <groups>
     </groups>
-    <test started-at="2024-05-29T11:03:59 EEST" name="Default test" finished-at="2024-05-29T11:04:10 EEST" duration-ms="11448">
-      <class name="selenuimTestWeb_button.googleTest">
-        <test-method is-config="true" signature="setURL()[pri:0, instance:selenuimTestWeb_button.googleTest@61862a7f]" started-at="2024-05-29T11:03:59 EEST" name="setURL" finished-at="2024-05-29T11:04:04 EEST" duration-ms="4894" status="PASS">
+    <test started-at="2024-06-06T11:36:42 EEST" name="TestOnChrome" finished-at="2024-06-06T11:36:50 EEST" duration-ms="8053">
+      <class name="selenuimTestWeb_button.testLogin">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:selenuimTestWeb_button.testLogin@6ae5aa72]" started-at="2024-06-06T11:36:42 EEST" name="setup" finished-at="2024-06-06T11:36:46 EEST" duration-ms="4005" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setURL -->
-        <test-method signature="verifySearchButton()[pri:0, instance:selenuimTestWeb_button.googleTest@61862a7f]" started-at="2024-05-29T11:04:04 EEST" name="verifySearchButton" finished-at="2024-05-29T11:04:10 EEST" duration-ms="6143" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:selenuimTestWeb_button.testLogin@6ae5aa72]" started-at="2024-06-06T11:36:46 EEST" name="verifyLogin" data-provider="create" finished-at="2024-06-06T11:36:47 EEST" duration-ms="1262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asaltest19@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789s*]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySearchButton -->
-        <test-method is-config="true" signature="endSession()[pri:0, instance:selenuimTestWeb_button.googleTest@61862a7f]" started-at="2024-05-29T11:04:10 EEST" name="endSession" finished-at="2024-05-29T11:04:10 EEST" duration-ms="265" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:selenuimTestWeb_button.testLogin@6ae5aa72]" started-at="2024-06-06T11:36:47 EEST" name="verifyLogin" data-provider="create" finished-at="2024-06-06T11:36:48 EEST" duration-ms="1022" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asaltest1646449@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789s*]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:selenuimTestWeb_button.testLogin@6ae5aa72]" started-at="2024-06-06T11:36:48 EEST" name="verifyLogin" data-provider="create" finished-at="2024-06-06T11:36:49 EEST" duration-ms="1050" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asaltest19@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789sgg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:selenuimTestWeb_button.testLogin@6ae5aa72]" started-at="2024-06-06T11:36:49 EEST" name="verifyLogin" data-provider="create" finished-at="2024-06-06T11:36:50 EEST" duration-ms="412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="endSession()[pri:0, instance:selenuimTestWeb_button.testLogin@6ae5aa72]" started-at="2024-06-06T11:36:50 EEST" name="endSession" finished-at="2024-06-06T11:36:50 EEST" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->
-      </class> <!-- selenuimTestWeb_button.googleTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- selenuimTestWeb_button.testLogin -->
+    </test> <!-- TestOnChrome -->
+    <test started-at="2024-06-06T11:36:42 EEST" name="TestOnFirefox" finished-at="2024-06-06T11:36:54 EEST" duration-ms="12193">
+      <class name="selenuimTestWeb_button.testLogin">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:selenuimTestWeb_button.testLogin@799f10e1]" started-at="2024-06-06T11:36:42 EEST" name="setup" finished-at="2024-06-06T11:36:48 EEST" duration-ms="6512" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:selenuimTestWeb_button.testLogin@799f10e1]" started-at="2024-06-06T11:36:48 EEST" name="verifyLogin" data-provider="create" finished-at="2024-06-06T11:36:49 EEST" duration-ms="1164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asaltest19@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789s*]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:selenuimTestWeb_button.testLogin@799f10e1]" started-at="2024-06-06T11:36:49 EEST" name="verifyLogin" data-provider="create" finished-at="2024-06-06T11:36:50 EEST" duration-ms="930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asaltest1646449@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789s*]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:selenuimTestWeb_button.testLogin@799f10e1]" started-at="2024-06-06T11:36:50 EEST" name="verifyLogin" data-provider="create" finished-at="2024-06-06T11:36:51 EEST" duration-ms="813" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asaltest19@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789sgg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:selenuimTestWeb_button.testLogin@799f10e1]" started-at="2024-06-06T11:36:51 EEST" name="verifyLogin" data-provider="create" finished-at="2024-06-06T11:36:52 EEST" duration-ms="337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="endSession()[pri:0, instance:selenuimTestWeb_button.testLogin@799f10e1]" started-at="2024-06-06T11:36:52 EEST" name="endSession" finished-at="2024-06-06T11:36:54 EEST" duration-ms="2410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endSession -->
+      </class> <!-- selenuimTestWeb_button.testLogin -->
+    </test> <!-- TestOnFirefox -->
+    <test started-at="2024-06-06T11:36:50 EEST" name="TestOnEdge" finished-at="2024-06-06T11:36:58 EEST" duration-ms="8321">
+      <class name="selenuimTestWeb_button.testLogin">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:selenuimTestWeb_button.testLogin@4562e04d]" started-at="2024-06-06T11:36:50 EEST" name="setup" finished-at="2024-06-06T11:36:55 EEST" duration-ms="4715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:selenuimTestWeb_button.testLogin@4562e04d]" started-at="2024-06-06T11:36:55 EEST" name="verifyLogin" data-provider="create" finished-at="2024-06-06T11:36:56 EEST" duration-ms="1029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asaltest19@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789s*]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:selenuimTestWeb_button.testLogin@4562e04d]" started-at="2024-06-06T11:36:56 EEST" name="verifyLogin" data-provider="create" finished-at="2024-06-06T11:36:57 EEST" duration-ms="970" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asaltest1646449@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789s*]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:selenuimTestWeb_button.testLogin@4562e04d]" started-at="2024-06-06T11:36:57 EEST" name="verifyLogin" data-provider="create" finished-at="2024-06-06T11:36:58 EEST" duration-ms="945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asaltest19@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789sgg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:selenuimTestWeb_button.testLogin@4562e04d]" started-at="2024-06-06T11:36:58 EEST" name="verifyLogin" data-provider="create" finished-at="2024-06-06T11:36:58 EEST" duration-ms="407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="endSession()[pri:0, instance:selenuimTestWeb_button.testLogin@4562e04d]" started-at="2024-06-06T11:36:58 EEST" name="endSession" finished-at="2024-06-06T11:36:58 EEST" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endSession -->
+      </class> <!-- selenuimTestWeb_button.testLogin -->
+    </test> <!-- TestOnEdge -->
+  </suite> <!-- Suite -->
 </testng-results>

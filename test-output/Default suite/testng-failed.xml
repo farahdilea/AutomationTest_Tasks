@@ -3,18 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenuimTestWeb_button.googleTest">
-        <methods>
-          <include name="setURL"/>
-          <include name="endSession"/>
-          <include name="verifySearchButton"/>
-        </methods>
-      </class> <!-- selenuimTestWeb_button.googleTest -->
       <class name="selenuimTestWeb_button.testLogin">
         <methods>
           <include name="endSession"/>
           <include name="verifyLogin"/>
-          <include name="setURL"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- selenuimTestWeb_button.testLogin -->
     </classes>
